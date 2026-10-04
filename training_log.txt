@@ -1,0 +1,39 @@
+INNER JOIN: (1023, 13) пропуски: 0 дубликаты: 0
+
+Целевая переменная: Модуль упругости при растяжении, ГПа
+DummyMean CV RMSE = 3.0925 test R² = -0.0164
+LinearRegression CV RMSE = 3.1119 test R² = -0.0275
+Ridge CV RMSE = 3.0931 test R² = -0.0189
+Lasso CV RMSE = 3.0931 test R² = -0.02
+RandomForest CV RMSE = 3.1078 test R² = -0.0492
+GradientBoosting CV RMSE = 3.1042 test R² = -0.0314
+RidgeWithoutIQR CV RMSE = 3.0929 test R² = -0.0141
+
+Целевая переменная: Прочность при растяжении, МПа
+DummyMean CV RMSE = 490.4024 test R² = -0.0003
+LinearRegression CV RMSE = 493.3354 test R² = 0.0049
+Ridge CV RMSE = 490.3335 test R² = 0.0026
+Lasso CV RMSE = 493.0512 test R² = 0.0075
+RandomForest CV RMSE = 492.4205 test R² = 0.0162
+GradientBoosting CV RMSE = 487.7796 test R² = 0.018
+RidgeWithoutIQR CV RMSE = 490.3667 test R² = 0.0037
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791066072.478542    3573 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791066076.662276    3573 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+/usr/local/lib/python3.13/dist-packages/keras/src/trainers/epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+Keras ИНС (16, 8) alpha=0.0001 validation RMSE = 0.7926 epoch 44
+/usr/local/lib/python3.13/dist-packages/keras/src/trainers/epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+Keras ИНС (16, 8) alpha=0.001 validation RMSE = 0.7794 epoch 70
+/usr/local/lib/python3.13/dist-packages/keras/src/trainers/epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+Keras ИНС (32, 16) alpha=0.0001 validation RMSE = 0.8003 epoch 47
+/usr/local/lib/python3.13/dist-packages/keras/src/trainers/epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+Keras ИНС (32, 16) alpha=0.001 validation RMSE = 0.7832 epoch 70
+
+Готово. Время, секунд: 109.34
+Модели: /content/vkr_work/vkr_composites/models 
+Результаты: /content/vkr_work/vkr_composites/reports

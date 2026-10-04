@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "checks": 40,
+  "comparison": "Прогнозы sklearn/Keras и JSON через Flask",
+  "dependencies": "Flask и зависимости включены в _vendor; установка пользователем не нужна"
+}

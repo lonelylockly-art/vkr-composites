@@ -1,0 +1,12 @@
+# Нужны только для повторного обучения. Приложению библиотеки не требуются.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0
+joblib==1.5.3
+matplotlib==3.10.8
+seaborn==0.13.2
+openpyxl==3.1.5
+tensorflow==2.21.0
+keras==3.15.1
+Flask==3.1.3

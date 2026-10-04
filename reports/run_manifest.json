@@ -1,0 +1,83 @@
+{
+  "bp_shape": [
+    1023,
+    10
+  ],
+  "nup_shape": [
+    1040,
+    3
+  ],
+  "joined_shape": [
+    1023,
+    13
+  ],
+  "missing": 0,
+  "duplicates": 0,
+  "train_n": 716,
+  "test_n": 307,
+  "random_state": 42,
+  "cv_folds": 10,
+  "python": "3.13.15",
+  "sklearn": "1.8.0",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "selected_models": {
+    "Модуль упругости при растяжении, ГПа": {
+      "selected": "Lasso",
+      "selection": "Минимальный CV RMSE среди 5 обучаемых моделей с IQR",
+      "cv_rmse": 3.093066071053819,
+      "baseline_cv_rmse": 3.0924756608816795,
+      "beats_baseline_cv": false,
+      "removed_train": 53,
+      "portable_max_abs_error": 0.0
+    },
+    "Прочность при растяжении, МПа": {
+      "selected": "GradientBoosting",
+      "selection": "Минимальный CV RMSE среди 5 обучаемых моделей с IQR",
+      "cv_rmse": 487.7796434343885,
+      "baseline_cv_rmse": 490.40238510835644,
+      "beats_baseline_cv": true,
+      "removed_train": 53,
+      "portable_max_abs_error": 2.2737367544323206e-12
+    }
+  },
+  "neural_network": {
+    "hidden_layers": "(16, 8)",
+    "alpha": 0.001,
+    "best_epoch": 70,
+    "epochs_run": 90,
+    "validation_rmse": 0.7794127666005525,
+    "input_features": 12,
+    "activation": "relu",
+    "optimizer": "adam",
+    "fit_n_before_iqr": 572,
+    "fit_n_after_iqr": 523,
+    "validation_n": 144,
+    "test_n": 307,
+    "early_stopping_patience": 20,
+    "framework": "TensorFlow 2.21.0 / Keras 3.15.1",
+    "portable_max_abs_error": 5.522680921465906e-07,
+    "metrics": [
+      {
+        "model": "KerasMLP",
+        "train_r2": 0.03519813656583526,
+        "train_mae": 0.709538866777772,
+        "train_rmse": 0.8908714825041666,
+        "test_r2": -0.040153867677258814,
+        "test_mae": 0.7742187538513766,
+        "test_rmse": 0.9442216562675536
+      },
+      {
+        "model": "DummyMean",
+        "train_r2": -0.00030913037198931903,
+        "train_mae": 0.719068835696763,
+        "train_rmse": 0.9071165836890518,
+        "test_r2": -0.00023491889613325156,
+        "test_mae": 0.7525352519182201,
+        "test_rmse": 0.9259257646379433
+      }
+    ],
+    "status": "trained"
+  },
+  "duration_seconds": 109.34
+}
